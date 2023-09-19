@@ -24,13 +24,13 @@ public class App {
         transaction.commit();
         session.close();
 
-//        //dellete from table
-//        session = factory.openSession();
-//        transaction = session.beginTransaction();
-//        final Book book = session.get(Book.class,2L);
-//        session.delete(book);
-//        transaction.commit();
-//        session.close();
+        //dellete from table
+        session = factory.openSession();
+        transaction = session.beginTransaction();
+        final Book book = session.get(Book.class,2L);
+        session.delete(book);
+        transaction.commit();
+        session.close();
 
         //update book in table
         session = factory.openSession();
